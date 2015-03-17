@@ -1,0 +1,23 @@
+copy a code from github to local repository
+$ git clone https://github.com/angiebird/WSE_HW1.git
+
+push local repository to remote repository
+$ git push origin
+ 
+pull code from remote repository to local repository
+$ git pull
+
+commit to local repository
+$ git commit -am "I am comment"
+
+add a new file to local repository
+$ git add filename
+ 
+check commit log
+$ git log
+
+check status
+$ git status
+
+check difference with the head version
+$ git diff HEAD
