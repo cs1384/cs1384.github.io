@@ -1,23 +1,83 @@
-copy a code from github to local repository
+create a new repository on github and upload from local -> follow instruction on github.com 
+
+copy repository from github to local 
 $ git clone https://github.com/angiebird/WSE_HW1.git
 
-push local repository to remote repository
-$ git push origin
- 
-pull code from remote repository to local repository
+pull code from remote to local repository (use everytime before you push)
 $ git pull
 
-commit to local repository
-$ git commit -am "I am comment"
+checkout the version from remote 
+$ git checkout filename
+
+check repository status
+$ git status
 
 add a new file to local repository
 $ git add filename
- 
-check commit log
-$ git log
 
-check status
-$ git status
+add all file to local repository (the file type, names defined in .gitignore will not be added)
+$ git add .
+
+specify the file type/name which will not be committed 
+$ vim .gitignore
+
+remove a file from local repository
+$ git rm filename
+
+commit to local repository
+$ git commit -m "I am comment"
+
+push local repository to remote repository
+$ git push
+
+
+// ADVANCED 
+
+see all the branches in this repository
+$ git branch
+
+create a new branch
+$ git branch <branch_name>
+
+switch to branch
+$ git checkout <branch_name>
+
+track a remote branch
+$ git checkout --track origin/movieIndexer
+
+check all remote repositories
+$ git remote -v
+
+untrack files
+git rm --cache
+
+// COLABORATION
+
+fork the shared repository to your github -> press 'fork' on github.com
+
+then clone to local
+
+connect your local repository with original 
+$ git remote add upstream https://github.com/original/Spoon-Knife.git 
+
+pull from original repository
+$ git pull upstream master
+
+keep your master clean! -> create working branch (checkout '-b' will create branch if nothing to checkout)
+$ git checkout -b <temp_branch> 
+
+do some editing, add, commit and then
+$ git push --set-upstream origin <new_branch_name>
+
+
+
+
+
+// LESS USE
+
+check commit log 
+$ git log --graph
 
 check difference with the head version
 $ git diff HEAD
+
