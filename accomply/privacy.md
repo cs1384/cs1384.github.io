@@ -4,7 +4,7 @@
 
 This policy describes how Accomply (the "App") handles your information.
 Accomply is operated by Tin Liu ("we" / "us"). You can reach us at
-ytl264@nyu.edu.
+tliu2930@gmail.com.
 
 The short version: we collect the minimum we need to make the App work,
 we never sell your data, and you can permanently delete your account
@@ -99,7 +99,7 @@ This deletion happens within minutes. Records that Apple keeps for
 its own tax and billing purposes are outside our control.
 
 If you'd prefer to delete your data without using the in-app button,
-email us at ytl264@nyu.edu and we'll do it manually.
+email us at tliu2930@gmail.com and we'll do it manually.
 
 ## 6. Your rights
 
@@ -147,4 +147,4 @@ way before the change takes effect.
 
 ## 11. Contact
 
-Questions about this policy or your data? Email **ytl264@nyu.edu**.
+Questions about this policy or your data? Email **tliu2930@gmail.com**.
