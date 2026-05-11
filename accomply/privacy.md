@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective: May 8, 2026**
+**Effective: May 11, 2026**
 
 This policy describes how Accomply (the "App") handles your information.
 Accomply is operated by Tin Liu ("we" / "us"). You can reach us at
@@ -84,9 +84,14 @@ We do not share your data with anyone else except as required by law
 
 ## 5. Data retention
 
-We keep your account data for as long as your account is active. When
-you delete your account inside the App (Home → tap your name → Delete
-Account → confirm), we permanently delete:
+We keep your account data for as long as your account is active. You
+can ask us to delete it at any time, and we will automatically delete
+accounts that go unused for a long period.
+
+### Deleting your account yourself
+
+Open the App, tap the **person icon** in the top toolbar, then
+**Delete Account → Delete**. We permanently delete:
 
 - Your authentication record
 - Your profile
@@ -100,6 +105,22 @@ its own tax and billing purposes are outside our control.
 
 If you'd prefer to delete your data without using the in-app button,
 email us at tliu2930@gmail.com and we'll do it manually.
+
+### Inactive accounts
+
+If you don't sign in to Accomply for **11 months**, we send a push
+notification to your registered devices warning that your account
+will be deleted. You then have **30 days** — for a total of 12 months
+of inactivity — to open the App and keep your account active. Simply
+signing in resets the clock; we never delete your account in the
+middle of you actively using it.
+
+After 12 months of continuous inactivity, your account and all of
+the data listed above are permanently deleted. This runs once a day.
+
+**Active Pro subscribers are exempt** from inactivity deletion. As
+long as your subscription is active and unexpired, we will not delete
+your account, regardless of how recently you opened the App.
 
 ## 6. Your rights
 
