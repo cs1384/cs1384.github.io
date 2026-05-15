@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accomply — Personal and shared routines</title>
+    <meta name="description" content="Track the recurring tasks that matter — alone or shared with the people you live and work with.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%93%3C/text%3E%3C/svg%3E">
+    <style>
+        :root {
+            --accent: #007AFF;
+            --orange: #FF9500;
+            --bg: #ffffff;
+            --fg: #1c1c1e;
+            --fg-secondary: #6b6b70;
+            --surface: #f2f2f7;
+            --border: #e5e5ea;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #ffffff;
+                --fg-secondary: #98989e;
+                --surface: #1c1c1e;
+                --border: #38383a;
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+        .hero { text-align: center; margin-bottom: 64px; }
+        .wordmark {
+            font-size: 44px;
+            font-weight: 700;
+            font-family: -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+        }
+        .tagline {
+            color: var(--fg-secondary);
+            font-size: 18px;
+            margin: 0 0 36px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--surface);
+            color: var(--fg-secondary);
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+        }
+        section { margin-bottom: 56px; }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            letter-spacing: -0.01em;
+        }
+        p { margin: 0 0 12px; color: var(--fg); }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .feature {
+            padding: 20px;
+            background: var(--surface);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+        }
+        .feature h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 6px;
+        }
+        .feature p {
+            font-size: 15px;
+            color: var(--fg-secondary);
+            margin: 0;
+        }
+        .feature .icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .links a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 24px;
+            color: var(--fg-secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1 class="wordmark">Accomply</h1>
+            <p class="tagline">Personal and shared routines</p>
+            <span class="badge">Coming soon to the App Store</span>
+        </header>
+
+        <section>
+            <p>Accomply turns recurring tasks into routines that stick. Track the chores, habits, and check-ins that matter — alone, or shared with the people you live and work with.</p>
+        </section>
+
+        <section>
+            <h2>Highlights</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="icon">🗓</span>
+                    <h3>Daily, weekly, monthly</h3>
+                    <p>Routines auto-reset at the period boundary, so completed items reappear the next day, Monday, or 1st of the month — ready to be done again.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">👥</span>
+                    <h3>Shared routine groups</h3>
+                    <p>Promote any routine group to a shared one and invite others with a share code. Everyone sees who acted on what.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🌱</span>
+                    <h3>A companion that grows with you</h3>
+                    <p>Each completion sends a star toward your routine companion, leveling it up across 27 stages.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🔒</span>
+                    <h3>Privacy by design</h3>
+                    <p>Sign in with Apple. Personal routines never leave your device. No tracking, no third-party analytics, no data sold.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Support</h2>
+            <p>Questions, ideas, or bug reports? Email <a href="mailto:tliu2930@gmail.com">tliu2930@gmail.com</a> — replies come from a person, not a queue.</p>
+        </section>
+
+        <div class="links">
+            <a href="/accomply/privacy">Privacy Policy</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+            <a href="mailto:tliu2930@gmail.com">Contact</a>
+        </div>
+
+        <footer>
+            Built by Tin Liu. Hosted on GitHub Pages.
+        </footer>
+    </div>
+</body>
+</html>
