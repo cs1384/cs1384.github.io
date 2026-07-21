@@ -1,4 +1,7 @@
-# Terms of Use
+---
+layout: page
+title: Terms of Use
+---# Terms of Use
 
 **Effective: July 20, 2026**
 
