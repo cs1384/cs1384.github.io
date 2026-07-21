@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Tin Liu</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%84%3C/text%3E%3C/svg%3E">
+    <style>
+        :root {
+            --accent: #007AFF;
+            --bg: #ffffff;
+            --fg: #1c1c1e;
+            --fg-secondary: #6b6b70;
+            --surface: #f2f2f7;
+            --border: #e5e5ea;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #ffffff;
+                --fg-secondary: #98989e;
+                --surface: #1c1c1e;
+                --border: #38383a;
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 680px; margin: 0 auto; padding: 48px 24px 96px; }
+        .topbar { margin-bottom: 8px; }
+        .topbar a {
+            color: var(--fg-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .topbar a:hover { color: var(--accent); }
+        .content h1 {
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin: 8px 0 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .content h2 {
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin: 40px 0 12px;
+        }
+        .content h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+        .content p, .content li { color: var(--fg); font-size: 16px; }
+        .content a { color: var(--accent); }
+        .content ul { padding-left: 22px; }
+        .content li { margin: 4px 0; }
+        .content strong { font-weight: 600; }
+        .content hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--fg-secondary);
+            font-size: 13px;
+            text-align: center;
+        }
+        footer a { color: var(--fg-secondary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="topbar"><a href="/">&larr; Tin Liu</a></nav>
+        <article class="content">
+            {{ content }}
+        </article>
+        <footer>
+            Built by Tin Liu. Questions? <a href="mailto:tliu2930@gmail.com">tliu2930@gmail.com</a>
+        </footer>
+    </div>
+</body>
+</html>
