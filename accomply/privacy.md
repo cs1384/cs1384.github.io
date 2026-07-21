@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Privacy Policy
----# Privacy Policy
+back_url: /accomply/
+back_label: Accomply
+---
+
+# Privacy Policy
 
 **Effective: May 11, 2026**
 
