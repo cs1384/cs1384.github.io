@@ -61,7 +61,11 @@
             font-size: 14px;
             font-weight: 500;
             border: 1px solid var(--border);
+            text-decoration: none;
+            transition: border-color 0.15s ease, color 0.15s ease;
         }
+        a.badge { color: var(--accent); }
+        a.badge:hover { border-color: var(--accent); }
         section { margin-bottom: 56px; }
         h2 {
             font-size: 22px;
@@ -125,7 +129,7 @@
         <header class="hero">
             <h1 class="wordmark">Accomply</h1>
             <p class="tagline">Personal and shared routines</p>
-            <span class="badge">Coming soon to the App Store</span>
+            <a class="badge" href="https://apps.apple.com/us/app/accomply/id6761890963" target="_blank" rel="noopener">Download on the App Store &rarr;</a>
         </header>
 
         <section>
