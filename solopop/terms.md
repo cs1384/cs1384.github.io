@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Terms of Use
----# Terms of Use
+back_url: /solopop/
+back_label: SoloPop
+---
+
+# Terms of Use
 
 **Effective: July 20, 2026**
 
