@@ -1,139 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Tin_SDE</title>
-        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-		<META HTTP-EQUIV="Expires" CONTENT="-1">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tin Liu</title>
+    <meta name="description" content="Software engineer building iOS apps.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%8B%3C/text%3E%3C/svg%3E">
+    <style>
+        :root {
+            --accent: #007AFF;
+            --bg: #ffffff;
+            --fg: #1c1c1e;
+            --fg-secondary: #6b6b70;
+            --surface: #f2f2f7;
+            --border: #e5e5ea;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #ffffff;
+                --fg-secondary: #98989e;
+                --surface: #1c1c1e;
+                --border: #38383a;
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 640px; margin: 0 auto; padding: 96px 24px 120px; }
+        .hero { text-align: center; margin-bottom: 44px; }
+        .wordmark {
+            font-size: 46px;
+            font-weight: 700;
+            font-family: -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+            letter-spacing: -0.02em;
+            margin: 0 0 10px;
+        }
+        .tagline { color: var(--fg-secondary); font-size: 18px; margin: 0 0 28px; }
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .social a {
+            display: inline-block;
+            padding: 9px 18px;
+            background: var(--surface);
+            color: var(--fg);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: border-color 0.15s ease;
+        }
+        .social a:hover { border-color: var(--accent); color: var(--accent); }
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--fg-secondary);
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 480px) { .apps { grid-template-columns: 1fr; } }
+        .app {
+            display: block;
+            padding: 24px 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--fg);
+            transition: border-color 0.15s ease, transform 0.15s ease;
+        }
+        .app:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .app .icon { font-size: 30px; display: block; margin-bottom: 12px; }
+        .app .name { font-size: 18px; font-weight: 600; margin: 0 0 4px; }
+        .app .desc { font-size: 14px; color: var(--fg-secondary); margin: 0; }
+        footer {
+            text-align: center;
+            margin-top: 72px;
+            color: var(--fg-secondary);
+            font-size: 13px;
+        }
+        footer a { color: var(--fg-secondary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1 class="wordmark">Tin Liu</h1>
+            <p class="tagline">Software engineer &middot; iOS apps</p>
+            <nav class="social">
+                <a href="https://www.linkedin.com/in/ytl264" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <a href="https://github.com/cs1384" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </header>
 
-    <body>
-        <div class="page-wrapper">
-            <!-- header-11 -->
-            <header>
-              	<nav class="navbar navbar-default" role="navigation">
-				  	<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                          <div class="navbar-brand" href="/">TIN</div>
-                        </div>
-                        <div class="navbar-header">
-                          <div class="navbar-brand" href="/">|</div>
-                        </div>
-						<div class="navbar-header">
-						  <a class="navbar-brand" href="/"><font color="31A24F">School Projects</font></a>
-						</div>
-						<div class="navbar-header">
-						  <a class="navbar-brand" target="_blank" href="https://github.com/cs1384">Github</a>
-						</div>
-						<div class="navbar-header">
-						  <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/in/ytl264">Linkedin</a>
-						</div>
-						<div class="navbar-header">
-						  <a class="navbar-brand" target="_blank" href="/resume.pdf">Resume</a>
-						</div>
-				  	</div><!-- /.container-fluid -->
-				</nav>
-            </header>
-
-            <div class='container'>
-            	<div class='col-lg-12'>
-            		<h2><p class="text-danger">GROUP PROJECT:</p></h2>
-                    <div class='col-lg-8'>
-                        <h4>
-                            <a target="_blank" href="https://github.com/calvinyu/SEA-final-project">
-                                Search Engine Architecture - Movie Search and Recommend System
-                            </a>
-                        </h4>
-                    </div>
-                    <div class='col-lg-8'>
-                        <h4>
-                            <a target="_blank" href="https://github.com/cs1384/NLP_project"> 
-                                Natural Language Processing - Movie Review Sentiment Analysis
-                            </a>
-                        </h4>
-                    </div>
-                    <div class='col-lg-8'>
-                        <h4>
-                            <a target="_blank" href="https://github.com/cs1384/WSE_knowledge-graph">
-                                Web Search Engine - Knowledge Graph
-                            </a>
-                        </h4>
-                    </div>
-            	</div>
-            	<br>
-            	<div class='col-lg-12'>
-                    <h2><p class="text-danger">GAMES:</p></h2>
-                    <div class='col-lg-8'>
-                        <h4>
-                        <a target="_blank" href="http://cs1384.github.io/ComputerGraphics/">   
-                            Computer Graphics - Homeworks and Final Project
-                        </a>
-                        </h4>
-                    </div>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="http://cs1384.github.io/MSP_computer-keyboard/"> 	
-            				Music Software Project - Computer Keyboard
-            			</a>
-                        </h4>
-            		</div>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="http://cs1384.github.io/PQS_connect-four/"> 
-            				Production Quality Software - Connect Four
-            			</a>
-                        </h4>
-            		</div>
-            	</div>
-            	<br>
-            	<div class='col-lg-12'>
-                    <h2><p class="text-danger">WEB DEVELOPMENT:</p></h2>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="https://github.com/cs1384/OST_QA-forum">
-            				Open Source Tool - Q&A forum
-            			</a>
-                        </h4>
-            		</div>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="https://github.com/cs1384/CampusClipper">
-            				Campus Clipper 
-            			</a>
-                        </h4>
-            		</div>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="https://github.com/cs1384/Puzzle">
-            				Jigsaw Puzzle
-            			</a>
-                        </h4>
-            		</div>
-            		<div class='col-lg-8'>
-                        <h4>
-            			<a target="_blank" href="https://github.com/cs1384/PersonalWebpage">
-            				Personal Webpage
-            			</a>
-                        </h4>
-            		</div>
-            	</div>
+        <section>
+            <h2>Apps</h2>
+            <div class="apps">
+                <a class="app" href="/accomply/">
+                    <span class="icon">&#9989;</span>
+                    <p class="name">Accomply</p>
+                    <p class="desc">Personal &amp; shared routines that stick.</p>
+                </a>
+                <a class="app" href="/solopop/">
+                    <span class="icon">&#128506;&#65039;</span>
+                    <p class="name">SoloPop</p>
+                    <p class="desc">Meet fellow solo travelers in person.</p>
+                </a>
             </div>
-			<div class='col-lg-12'>
-				<br><br><br><br><br>
-			</div>
-        </div>
+        </section>
 
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <!--
-        <script src="{% static 'js/script.js' %}"></script>
-        -->
-        
-    </body>
+        <footer>
+            Say hello: <a href="mailto:tliu2930@gmail.com">tliu2930@gmail.com</a>
+        </footer>
+    </div>
+</body>
 </html>
