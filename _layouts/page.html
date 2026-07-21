@@ -75,7 +75,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="topbar"><a href="/">&larr; Tin Liu</a></nav>
+        <nav class="topbar"><a href="{{ page.back_url | default: '/' }}">&larr; {{ page.back_label | default: 'Tin Liu' }}</a></nav>
         <article class="content">
             {{ content }}
         </article>
