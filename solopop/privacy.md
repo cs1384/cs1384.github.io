@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Privacy Policy
----# Privacy Policy
+back_url: /solopop/
+back_label: SoloPop
+---
+
+# Privacy Policy
 
 **Effective: July 15, 2026**
 
