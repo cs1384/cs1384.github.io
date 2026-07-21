@@ -1,0 +1,15 @@
+title: Tin Liu
+description: Software engineer building iOS apps.
+author: Tin Liu
+
+# We render pages with our own _layouts/page.html and self-contained landing
+# HTML — no Jekyll theme (that's what added the unwanted "Tin Liu" masthead to
+# the legal pages). Do NOT add a `theme:` here.
+markdown: kramdown
+
+# Keep non-web files out of the built site.
+exclude:
+  - "How to use Github.docx"
+  - Git_Commands
+  - 2023Resume.pdf
+  - README.md
