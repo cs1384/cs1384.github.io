@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SoloPop — Meet fellow solo travelers</title>
+    <meta name="description" content="SoloPop helps solo travelers meet up in person — host or join small, local meetups nearby.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BA%3C/text%3E%3C/svg%3E">
+    <style>
+        :root {
+            --accent: #007AFF;
+            --bg: #ffffff;
+            --fg: #1c1c1e;
+            --fg-secondary: #6b6b70;
+            --surface: #f2f2f7;
+            --border: #e5e5ea;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #ffffff;
+                --fg-secondary: #98989e;
+                --surface: #1c1c1e;
+                --border: #38383a;
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 640px; margin: 0 auto; padding: 80px 24px 120px; }
+        .topbar { margin-bottom: 40px; }
+        .topbar a { color: var(--fg-secondary); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .topbar a:hover { color: var(--accent); }
+        .hero { text-align: center; margin-bottom: 64px; }
+        .wordmark {
+            font-size: 44px;
+            font-weight: 700;
+            font-family: -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+            letter-spacing: -0.02em;
+            margin: 0 0 12px;
+        }
+        .tagline { color: var(--fg-secondary); font-size: 18px; margin: 0 0 36px; }
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--surface);
+            color: var(--fg-secondary);
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+        }
+        section { margin-bottom: 56px; }
+        h2 { font-size: 22px; font-weight: 600; margin: 0 0 16px; letter-spacing: -0.01em; }
+        p { margin: 0 0 12px; color: var(--fg); }
+        .features { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .feature { padding: 20px; background: var(--surface); border-radius: 14px; border: 1px solid var(--border); }
+        .feature h3 { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
+        .feature p { font-size: 15px; color: var(--fg-secondary); margin: 0; }
+        .feature .icon { font-size: 24px; margin-bottom: 8px; display: block; }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        .links a { color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500; }
+        .links a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 64px; padding-top: 24px; color: var(--fg-secondary); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="topbar"><a href="/">&larr; Tin Liu</a></nav>
+
+        <header class="hero">
+            <h1 class="wordmark">SoloPop</h1>
+            <p class="tagline">Meet fellow solo travelers</p>
+            <span class="badge">Coming soon to the App Store</span>
+        </header>
+
+        <section>
+            <p>Traveling solo doesn't mean being alone. SoloPop lets you host or join small, local get-togethers — a "joinable" — with other travelers near you: grab dinner, share a day trip, or explore a neighborhood together.</p>
+        </section>
+
+        <section>
+            <h2>Highlights</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="icon">&#128205;</span>
+                    <h3>Discover what's nearby</h3>
+                    <p>See joinables around you on a map. Filter by time, category, and who they're for, and find plans that fit your day.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">&#128101;</span>
+                    <h3>Host or apply</h3>
+                    <p>Post a joinable with a plan, place, and time — or apply to someone else's with a short note. Contact details unlock only when a host accepts.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">&#128737;&#65039;</span>
+                    <h3>Built for safety</h3>
+                    <p>Sign in with Apple, block or report anyone, and agree to community guidelines with zero tolerance for abuse. Reported content is hidden right away.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">&#128274;</span>
+                    <h3>Privacy first</h3>
+                    <p>Your contact info stays private until you choose to connect. No tracking, no third-party analytics, no data sold. Delete your account anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Support</h2>
+            <p>Questions, ideas, or bug reports? Email <a href="mailto:tliu2930@gmail.com">tliu2930@gmail.com</a> — replies come from a person, not a queue.</p>
+        </section>
+
+        <div class="links">
+            <a href="/solopop/privacy">Privacy Policy</a>
+            <a href="/solopop/terms">Terms of Use</a>
+            <a href="mailto:tliu2930@gmail.com">Contact</a>
+        </div>
+
+        <footer>
+            Built by Tin Liu. Hosted on GitHub Pages.
+        </footer>
+    </div>
+</body>
+</html>
