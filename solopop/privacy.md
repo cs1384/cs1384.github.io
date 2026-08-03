@@ -29,7 +29,7 @@ private relay; in that case we only receive the relay address. We store:
 
 **Profile you create.** To meet other travelers you build a profile. We
 store your display name, gender, age, nationality, spoken languages, a
-short bio, and the photos you upload. Your age must be 18 or older to
+short bio, a one-liner headline, and the photos you upload. Your age must be 18 or older to
 use SoloPop.
 
 **Contact handles.** You may add contact details — phone number,
