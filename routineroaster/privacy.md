@@ -14,22 +14,34 @@ information. Routine Roaster is operated by Tin Liu ("we" / "us"). You can
 reach us at tliu2930@gmail.com.
 
 The short version: there is no account and no sign-in, so we do not know who
-you are. Almost nothing leaves your phone, we never sell your data, and
-deleting the App deletes everything it stored.
+you are. What you make is kept on your phone and in your own iCloud, we never
+see it, and we never sell your data.
 
-## 1. What stays on your device
-
-All of this lives only on your phone and is never uploaded:
+## 1. What you make
 
 - Your routines, the days they run, and their start and end dates
 - Which routines you completed, and when
 - The coaches you write, including their names, descriptions and portraits
-- The messages your coach has sent you
 - Your notification times and preferences
 
-Deleting the App deletes all of it. We keep no copy and cannot recover it.
+This is stored on your phone and, if you are signed in to iCloud, copied to
+**your own private iCloud account** so that it survives deleting the App and
+follows you to a new phone.
 
-## 2. What leaves your device
+That copy is yours, not ours. It goes to Apple's iCloud under your Apple ID,
+in the private database only you can read. We have no access to it, we receive
+no copy, and we cannot recover it for you. Apple's handling of it is covered by
+[Apple's privacy policy](https://www.apple.com/legal/privacy/).
+
+If you are not signed in to iCloud, or you switch iCloud off for Routine
+Roaster in Settings, everything above stays on your phone alone and deleting
+the App deletes it.
+
+The messages your coach has sent you are the exception: that history is kept on
+the device only and is never copied anywhere. It is rebuilt from your routines,
+so there is nothing to restore.
+
+## 2. What comes to us
 
 **Only when you tap "Generate with Pro."** That sends the coach name and the
 character description you typed to our server, which passes it to Anthropic
@@ -62,8 +74,12 @@ person.
 
 ## 5. Notifications
 
-All notifications are scheduled locally on your device. Nothing is sent through
-a notification server, and no push token is created or transmitted.
+Every message your coach sends is scheduled locally on your device. We operate
+no notification server, send you nothing, and hold no push token.
+
+Apple's iCloud sync uses a silent system notification to tell your phone that
+something changed on another device. That is between your phone and Apple; it
+carries no message, is never shown to you, and we are not involved in it.
 
 ## 6. What we do not do
 
